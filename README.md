@@ -4,10 +4,10 @@ A Java program that can be scheduled to run *unattended* at set frequencies to l
 
 ## Usage
 
-1 - Download Selenium Chrome Driver from this [link (https://sites.google.com/a/chromium.org/chromedriver/)].  Make sure to store in a path without spaces in the name - for example C:\Local_Data\UnattendedAutotuneWeb\Drivers
-1 - Download the UnattendedAutotuneWeb.jar file from [here (https://mega.nz/#!T7YEQaxI!zINDYKlTRDehG0rWxmhouQnqLMRwYiTM9nh7epxmp68)]
+1 - Download Selenium Chrome Driver from this [link](https://sites.google.com/a/chromium.org/chromedriver/).  Make sure to store in a path without spaces in the name - for example C:\Local_Data\UnattendedAutotuneWeb\Drivers
+1 - Download the UnattendedAutotuneWeb.jar file from [here](https://mega.nz/#!T7YEQaxI!zINDYKlTRDehG0rWxmhouQnqLMRwYiTM9nh7epxmp68)
 1 - Decide the options (See Command Line Options as below) and try the program out
-1 - Then schedule using Windows Schedule.  See this [page (https://www.ilovefreesoftware.com/11/windows-10/configure-run-scheduled-tasks-windows-10.html)] for instructions on scheduling
+1 - Then schedule using Windows Schedule.  See this [page](https://www.ilovefreesoftware.com/11/windows-10/configure-run-scheduled-tasks-windows-10.html) for instructions on scheduling
 
 ## Command Line Options
 
