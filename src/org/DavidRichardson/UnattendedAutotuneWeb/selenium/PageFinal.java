@@ -14,9 +14,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.DavidRichardson.UnattendedAutotuneWeb.entity.AppLogger;
-import org.DavidRichardson.UnattendedAutotuneWeb.model.AppOptionManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class PageFinal extends PageBase 

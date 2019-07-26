@@ -1,13 +1,22 @@
 # UnattendedAutotuneWeb
 
-A Java program that can be scheduled to run *unattended* at set frequencies to launch and trigger AutotuneWeb runs.
+A Java program that can be scheduled to run *unattended* at set frequencies to launch and trigger [AutotuneWeb](https://github.com/MarkMpn/AutotuneWeb) runs.
 
 ## Usage
 
 1. Download Selenium Chrome Driver from this [link](https://sites.google.com/a/chromium.org/chromedriver/).  Make sure to store in a path without spaces in the name - for example C:\Local_Data\UnattendedAutotuneWeb\Drivers
-2. Download the UnattendedAutotuneWeb.jar file from [here](https://mega.nz/#!T7YEQaxI!zINDYKlTRDehG0rWxmhouQnqLMRwYiTM9nh7epxmp68)
-3. Decide the options (See Command Line Options as below) and try the program out
-4. Then schedule using Windows Schedule.  See this [page](https://www.ilovefreesoftware.com/11/windows-10/configure-run-scheduled-tasks-windows-10.html) for instructions on scheduling
+2. Download the UnattendedAutotuneWeb.jar and UnattendedAutotuneWeb.bat files from [here](https://mega.nz/#!T7YEQaxI!zINDYKlTRDehG0rWxmhouQnqLMRwYiTM9nh7epxmp68).
+3. Edit UnattendedAutotuneWeb.bat and set the four key variables needed to run the program
+4. Run UnattendedAutotuneWeb.bat to see it in action!
+5. Then schedule using Windows Schedule.  See this [page](https://www.ilovefreesoftware.com/11/windows-10/configure-run-scheduled-tasks-windows-10.html) for instructions on scheduling
+
+## What happens
+
+The Java program uses the Selenium tool to launch the Web browser, navigate to the AutotuneWeb page and then manipulate the controls based on parameters it receives.  Once complete, it will close the window.  The behaviour is just the same as if you had performed the same actions manually.
+
+## Diagnostics
+
+The program generates output in C:\temp\UnattendedAutotuneWeb.log.  Look in this file to see that the program has run and also where you are in the queue as it grabs this reply back before closing the browser.
 
 ## Command Line Options
 

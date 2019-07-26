@@ -18,8 +18,6 @@ import java.util.Locale;
 import java.io.IOException;
 import java.awt.EventQueue;
 import java.util.logging.FileHandler;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.Handler;
 import java.util.logging.Formatter;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
@@ -171,7 +169,7 @@ public class AppLogger
 			// Want to get last character  !!			sb.append(record.getLevel().toString().charAt(record.getLevel().toString().)
 			sb.append(" : ");
 			sb.append(record.getMessage());
-			sb.append("\n");
+			sb.append("\r\n");
 			return sb.toString();
 		}
 	}
@@ -249,14 +247,14 @@ public class AppLogger
 		// get the global logger to configure it
 		//			Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-		// suppress the logging output to the console
-		Logger rootLogger = Logger.getLogger("");
+		// allow the logging output to the console
+/*		Logger rootLogger = Logger.getLogger("");
 		Handler[] handlers = rootLogger.getHandlers();
 		if (handlers[0] instanceof ConsoleHandler) 
 		{
 			rootLogger.removeHandler(handlers[0]);
 		}
-
+*/
 		// Set log level based on preference
 		// Changed now to 
 		//  Regular
@@ -267,7 +265,7 @@ public class AppLogger
 		
 		//			logger.setLevel(Level.INFO);
 //		fileTxt = new FileHandler(AppPreferences.getInstance().getM_LogFile(), true);
-		fileTxt = new FileHandler("C:\\temp\\ADRAAppealManager_Selenium.log", true);
+		fileTxt = new FileHandler("C:\\temp\\UnattendedAutotuneWeb.log", true);
 
 		// create a TXT formatter
 		//			formatterTxt = new SimpleFormatter();
